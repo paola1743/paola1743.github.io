@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Ana Paola Guerrero Ruiz
+    Materia: Progrmacion Web 1
+    Fecha: 13 de abril de 2023
+    Descripcion: Efectos con CSS
+-->
+<html lang="es">
+<head>
+    <title>Plantilla</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Ana Paola Guerrero Ruiz">
+    <meta name="revised"content="">
+    <meta name="description"content="transform, transition, animation">
+    <style>
+        p{ color:darkorchid; background-color: darkturquoise;}
+        .moverX:hover{transform:translateX(10px)}
+        .moverY:hover{transform:translateY(10px)}
+        .moverXY:hover{transform:translate(20px,5px)}
+        .rotarX:hover{transform: rotateX(180deg);}
+        .rotarY:hover{transform: rotateY(180deg);}
+        .rotarZ:hover{transform: rotateZ(180deg);}
+        .escalarX:hover{transform: scaleX(1.5);}
+        .escalarY:hover{transform: scaleY(1.5);}
+        .escalarXY:hover{transform: scale(1.5,1.5);}
+        .barridoX:hover{transform:skewX(30deg)}
+        .barridoY:hover{transform:skewY(30deg)}
+        .matrix_1:hover{transform:scale(15)}
+        .matrix_2:hover{transform:skewY(30deg)}
+        .rainbow{
+            height: 100px; width: 100px;
+            animation-name: rgb; animation-duration: 2.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rgb{
+            0%{background-color: aqua;}
+            16%{background-color: palevioletred}
+            33%{background-color: blueviolet;}
+            58%{background-color: lightblue}
+            67%{background-color: red}
+            82%{background-color: greenyellow;}
+            100%{background-color: hotpink}
+        }
+    </style>
+</head>
+<body>
+<hgroup>
+    <h1>Efectos CSS</h1>
+    <h2>Translate</h2>
+    <p>UPSLP (Sin efecto)</p>
+    <p class="moverX">UPSLP (Mover en X)</p>
+    <p class="moverY">UPSLP (Mover en Y)</p>
+    <p class="moverXY">UPSLP (Mover en X,Y)</p>
+</hgroup>
+<hgroup>
+    <h2>Rotate</h2>
+    <p>UPSLP (Sin efecto)</p>
+    <p class="rotarX">UPSLP (Rotar en X)</p>
+    <p class="rotarY">UPSLP (Rotar en Y)</p>
+    <p class="rotarZ">UPSLP (Rotar en Z)</p>
+</hgroup>  
+<hgroup>
+    <h2>Scale</h2>
+    <p>UPSLP (Sin efecto)</p>
+    <p class="escalarX">UPSLP (Escalar en X)</p>
+    <p class="escalarY">UPSLP (Escalar en Y)</p>
+    <p class="escalarXY">UPSLP (Escalar en XY)</p>
+</hgroup> 
+<hgroup>
+    <h2>Skew</h2>
+    <p>UPSLP (Sin efecto)</p>
+    <p class="barridoX">UPSLP (Escalar en X)</p>
+    <p class="barridoY">UPSLP (Escalar en Y)</p>
+   
+</hgroup>
+<hgroup>
+    <h2>Matrix</h2>
+    <p>UPSLP (Sin efecto)</p>
+    <p class="matrix_1">UPSLP (Escalar en X)</p>
+    <p class="matrix_2">UPSLP (Escalar en Y)</p>
+   
+</hgroup>
+<hgroup>
+    <h2>Animation</h2>
+    <div class="rainbow"></div>
+</hgroup>
+</body>
+</html>
