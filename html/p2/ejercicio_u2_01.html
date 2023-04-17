@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Ana Paola Guerrero Ruiz
+    Materia: Progrmacion Web 1
+    Fecha: 2 de marzo de 2023
+    Descripcion: etiquetas para tablas
+-->
+<html lang="es">
+<head>
+    <title>Unidad 2 - Ejercicio 1</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Ana Paola Guerrero Ruiz">
+    <meta name="revised"content="">
+    <meta name="description"content="table, border, colspan, rowspan, tr, th">
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #ffffff;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #bdb5b5;
+      } 
+    </style> 
+<body>
+    <hgroup>
+        <h1>Tablas</h1>
+        <h2>Combinar renglones y columnas</h2>
+        <table border="3">
+            <tr>
+                <th>No.</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>Martinez</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Regina</td>
+                <td colspan="2">Sanchez</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td rowspan="2">Tomas</td>
+                <td>Perez</td>
+                <td>Martinez</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Gerardo</td>
+                <td>Perez</td>
+                <td>Martinez</td>
+            </tr>
+        </table>
+    </hgroup>
+    <hgroup>
+        <h2>Ejercicio 1</h2>
+        <table border="3">
+            <tr><th colspan="4">Tabla No.1</th></tr>
+            <tr><td>A</td><td>B</td><td rowspan="4">C</td><td>D</td></tr>
+            <tr><td rowspan="2">E</td><td>F</td><td rowspan="3">G</td>
+            <tr><td>H</td></tr></tr>
+            <tr><td>I</td><td>J</td>
+        </table>
+    </hgroup>
+    <hgroup>
+        <h2>Ejercicio 2</h2>
+        <table border="3">
+            <tr><th colspan="4">Tabla No.2</th></tr>
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+            <tr><td rowspan="3">5</td><td>6</td><td colspan="2">7</td>
+            <tr><td>8</td><td>9</td><td rowspan="2">10</td></tr></tr>
+            <tr><td colspan="2">11</td>
+        </table>
+    </hgroup>
+    <hgroup>
+        <h2>Ejercicio 3</h2>
+        <table border="3">
+            <tr><th colspan="4">Tabla No.3</th></tr>
+            <tr><th>&nbsp;</th><th>Comida</th><th>Hotel</th><th>Transporte</th></tr>
+            <tr><td colspan="4">Vallarta</td></tr>
+                <tr><td>01/Jul/2022</td><td>$15</td><td>$120</td><td>ND</td></tr>
+                <tr><td>02/Jul/2022</td><td>$18</td><td>$120</td><td>ND</td></tr>
+                <tr><td>03/Jul/2022</td><td>$25</td><td>$120</td><td>ND</td></tr> 
+            <tr><td colspan="4">Nuevo Vallarta</td></tr>
+                <tr><td>02/Jul/2022</td><td>$18</td><td>$120</td><td>ND</td></tr>
+                <tr><td>03/Jul/2022</td><td>$25</td><td>$120</td><td>ND</td></tr> 
+        </table>
+    </hgroup>
+</body>
+</html>
