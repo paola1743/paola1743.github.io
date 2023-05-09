@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Ana Paola Guerrero Ruiz
+    Materia: Progrmacion Web 1
+    Fecha: 
+    Descripcion:
+-->
+<html lang="es">
+<head>
+    <title>Unidad 3 - Ejercicio 2</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Ana Paola Guerrero Ruiz">
+    <meta name="revised"content="">
+    <meta name="description"content="">
+</head>
+<style>
+    .Tit{
+        background-color: black; color: aqua;
+    }
+</style>
+<body>
+     <!--1.3.1.11 Hola Mundo Tareas-->
+  <h1 class="Tit">JavaScript - Var y Alert</h1>
+  <script>
+      let x = 100, y = 50;
+      alert("El valor de X (Main):" + x);
+      alert("El valor de Y (Main):" + y);
+
+    function testFunction() {
+        let x = 100, y = 50;
+        alert("El valor de X (Main):" + x);
+        alert("El valor de Y (Main):" + y);
+    }
+    testFunction();
+
+    alert("...se procede a continuar con la carga de la pagina");
+  </script>
+  <!--2.1.1.15 Tareas-->
+    <script>
+        //const precioRosa = 8;
+
+        let precioRosa=8, numRosas=70, totalRosa;
+        let lirCosto=10, lirCant=50, importeLirio;
+        let tulipanesValor=2, tulipanesExistencias=120, tulipanTotal;
+
+        totalRosa=precioRosa * numRosas;
+        importeLirio=lirCosto * lirCant;
+        tulipanTotal=tulipanesExistencias * tulipanesValor;
+        total=importeLirio+totalRosa+tulipanTotal;
+
+        function calcular(){
+            totalRosa=precioRosa * numRosas;
+            importeLirio=lirCosto * lirCant;
+            tulipanTotal=tulipanesExistencias * tulipanesValor;
+            total=importeLirio+totalRosa+tulipanTotal;
+
+        }
+
+        function imprime(){
+            
+        alert("Rosa >> Precio: $" + precioRosa + ",Cantidad: " + numRosas + ",Importe: $" + totalRosa +
+        "\nLirio >> Precio: $" + lirCosto + ",Cantidad: " + lirCant + ",Importe: $" + importeLirio +
+        "\nTulipan >> Precio: $" + tulipanesValor + ",Cantidad: " + tulipanesExistencias + ",Importe: $" + tulipanTotal +
+        "\n\nTotal: $"+ total);
+        }
+
+        calcular();
+        imprime();
+
+        alert("Rosa >> Precio: $" + precioRosa + ",Cantidad: " + numRosas + ",Importe: $" + totalRosa +
+        "Lirio >> Precio: $" + lirCosto + ",Cantidad: " + lirCant + ",Importe: $" + importeLirio +
+        "Tulipan >> Precio: $" + tulipanesValor + ",Cantidad: " + tulipanesExistencias + ",Importe: $" + tulipanTotal);
+        /*Rosa: precio unitario: 8 , cantidad: 70 , valor: 560
+        Lirio: precio unitario: 10 , cantidad: 50 , valor: 500
+        Tulipán: precio unitario: 2 , cantidad: 120 , valor: 240
+        Total:  1300*/
+
+    </script>
+    <script>
+        /*2.1.1.20 Laboratorio */
+
+        let nombre, telefono, correo;
+
+        function imprimeDatos(strNombre, strTelefono, strCorreo){
+            alert("Nombre:" + strNombre + "\nTelefono:" + strTelefono + "\nCorreo:" + strCorreo +
+            "\n\nCadena Formateada: " + strNombre + "/" + strTelefono + "/" + strCorreo + "/" );
+        }
+        
+        nombre="Maxwell Wright";
+        telefono="(0191) 719 6495";
+        correo="Curabitur.egestas.nunc@nonummyac.co.uk";
+        imprimeDatos(nombre,telefono,correo);
+
+        nombre="Raja Villarreal";
+        telefono="0866 398 2895";
+        correo="posuere.vulputate@sed.com";
+
+        nombre="Helen Richards";
+        telefono="0800 1111";
+        correo="libero@convallis.edu";
+        imprimeDatos(nombre,telefono,correo);
+
+        /* Maxwell Wright	(0191) 719 6495	Curabitur.egestas.nunc@nonummyac.co.uk
+        Raja Villarreal	0866 398 2895	posuere.vulputate@sed.com
+        Helen Richards	0800 1111	libero@convallis.edu*/
+    </script>
+</body>
+</html>

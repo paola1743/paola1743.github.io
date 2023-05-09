@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Ana Paola Guerrero Ruiz
+    Materia: Progrmacion Web 1
+    Fecha: 
+    Descripcion:
+-->
+<html lang="es">
+<head>
+    <title>Ejercicio 3 - Unidad 3</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Ana Paola Guerrero Ruiz">
+    <meta name="revised"content="">
+    <meta name="description"content="">
+</head>
+<style>
+    .Tit{
+        background-color: black; color: aqua;
+    }
+</style>
+<body>
+     <!--2.2.1.21 Tipos de Datos Primitivos - Tareas-->
+  <h1 class="Tit">JavaScript - Tipos de datos</h1>
+<body>
+    <script>
+        let varBoolean_1=true;
+        let varBoolean_2=Boolean(false);
+        let varBoolean_3=Boolean(1);
+        let varBoolean_4=Boolean(Infinity);
+        let varBoolean_5=Boolean("");
+
+        let varNumber=("3.1416");
+        let varBigInt=(3);
+        let varString=String(Infinity);
+        let varUndefined;
+
+        alert("varBoolean es de tipo: " + typeof varBoolean_1 + " y su valor es de:" + varBoolean_1 +
+             "\nvarNumber es de tipo: " + typeof varNumber + " y su valor es de:" + varNumber +
+             "\nvarBigInt es de tipo: " + typeof varBigInt + " y su valor es de:" + varBigInt +
+             "\nvarString es de tipo: " + typeof varString + " y su valor es de:" + varString);
+
+        let datoString = String("1234");
+        let datoNumber = Number(4321);
+        let datoBigInt = BigInt(5555);
+        let datoBoolean = Boolean(5555);
+
+        alert("String + Number, el resultado es:" + typeof (datoString + datoNumber)+ 
+        "String + BigInt, el resultado es:" + typeof (datoString + datoBigInt) + 
+        "String + Boolean, el resultado es:" + typeof (datoString + datoBoolean));
+        
+        console.log(typeof (datoBigInt + datoString),(datoBigInt + datoString));
+
+        let str1 = 42 + "1";
+        let str2 = 42 + 1;
+        let str3 = 42 + Number("1");
+
+        console.log(typeof str1,str1);
+        console.log(typeof str2,str2);
+        console.log(typeof str3,str3);
+    </script>
+    
+</body>
+</html>
