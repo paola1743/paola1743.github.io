@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Ana Paola Guerrero Ruiz
+    Materia: Progrmacion Web 1
+    Fecha: 
+    Descripcion:
+-->
+<html lang="es">
+<head>
+    <title>Ejercicio 7 - Unidad 3</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Ana Paola Guerrero Ruiz">
+    <meta name="revised"content="">
+    <meta name="description"content="for,">
+</head>
+<style>
+    .Tit{
+        background-color: black; color: aqua;
+    }
+</style>
+<!--4.2.1.15 Bucles - Tareas-->
+<h1 class="Tit">JavaScript - Bucles</h1>
+<body>
+    <script>
+        let varNum;
+
+        for(varNum = 100; varNum>=0; varNum-=10){
+            consoloe.log("For >> Valor: " + varNum);
+        }
+
+        varNum=100;
+
+        do{
+            consoloe.log("Do While >> Valor: " + varNum);
+        }while(varNum>=0);
+
+        varNum=100;
+
+        while(varNum>=0){
+            consoloe.log("While >> Valor: " + varNum);
+            varNum-=10
+        }
+
+        varNum=100;
+        for(;;){
+            consoloe.log("For Infinito >> Valor: " + varNum);
+            if(varNum>0)
+                varNum-=10;
+            else
+                break;
+            
+        }
+        
+        /*Tarea 2*/
+        let varNum1 = Number(prompt("Valor inicial de la secuencia: "));
+        let varNum2 = Number(prompt("Valor final de la secuencia: "));
+
+        if (Number.isNaN(varNum1) || Number.isNaN(varNum2) ) {alert("Los valores deben ser numericos..."); }
+        else{
+            for(varNum = varNum1;;){
+                consoloe.log("For Dinamico >> Valor: " + varNum);
+            }
+        }
+////////////////////////////////////////////////////////////////////////////////////////////////
+        let varN1,varN2,varOp,varRes,varOpcion;
+        let varHistorial;
+        do{
+
+             varN1 = Number(prompt("Introduce el primer número: "));
+             varN2 = Number(prompt("Introduce el segundo número: "));
+             varOp = prompt("Introduce el operando (+, -, * o /)");
+            
+            
+
+            if (!Number.isNaN(varN1) && !Number.isNaN(varN2)) {
+                switch (varOp) {
+                    case "+": varRes = varN1 + varN2; break;
+                    case "-": varRes = varN1 - varN2; break;
+                    case "*": varRes = varN1 * varN2; break;
+                    case "/": varRes = varN1 / varN2; break;
+                    default: varRes = "Error: Operacion Incorrecta";
+                }
+            } else {
+                varRes = "Error: al menos uno de los valores ingresados no es un número";
+            }
+       
+        alert(varRes);
+        varHistorial += "\n" + varRes;
+
+        varOpcion= confirm("Deseas realizar otra operacion?");
+        }while(varOpcion);
+
+        alert(varHistorial);
+    </script>
+    
+</body>
+</html>
