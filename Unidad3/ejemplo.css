@@ -1,0 +1,17 @@
+h1 {text-align: center}
+p {text-align: justify;}
+#hTitulo {color: green; background-color: black; }
+
+.vt323{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #gradColores{ background-image: 
+    linear-gradient(to right, 
+    rgb(247, 16, 16), rgba(181, 252, 49, 0.856), rgba(255, 255, 92, 0.767), rgb(51, 238, 213),blue,indigo);}
+
+  #gradColores2{
+    background-image: radial-gradient(rgba(247, 7, 195, 0.685), rgba(255, 252, 88, 0.856), rgb(82, 216, 250), rgba(225, 0, 255, 0.753), violet, indigo);
+  }
