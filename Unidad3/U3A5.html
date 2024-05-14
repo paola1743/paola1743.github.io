@@ -1,0 +1,36 @@
+<!--
+    Unidad: Parcial No.1
+    Descripcion: Estructura basica HTML5
+    Fecha: 2 de Febrero de 2024
+-->
+<!DOCTYPE html>
+<html>
+    <head><title>UPSLP - Programacion Web I</title></head>
+    <body>
+        <h1>JavaScript - Ejercicios</h1>
+        <fieldset>
+            <legend>Ecuacion Cuadratica</legend>
+            <label>Valor del coeficiente <code>a</code>:</label>
+            <input type="number" placeholder="(A)" id="valor_A">
+            <br>
+            <label>Valor del coeficiente <code>b</code>:</label>
+            <input type="number" placeholder="(B)" id="valor_B">
+            <br>
+            <label>Valor del coeficiente <code>c</code>:</label>
+            <input type="number" placeholder="(C)" id="valor_C">
+            <br>
+            <button onclick="eqCuadratica()">Calcular</button>
+            <br>
+            <textarea id="res_eqCuadratica"></textarea>
+        </fieldset>
+        <script>
+            eqCuadratica(){
+                let valor_A = document.getElementById("valor_A").value;
+                let valor_B = document.getElementById("valor_B").value;
+                let valor_C = document.getElementById("valor_C").value;
+
+                let res_eqCuadratica = (-valor_B (Math.sqrt(Math.pow(valor_B,2)-(4*valor_A))))
+            }
+        </script>
+    </body>
+</html>
