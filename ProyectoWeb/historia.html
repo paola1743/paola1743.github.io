@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
+
+
+   
+    <style>
+        body {
+            text-align: center;
+  background: #fff;
+  font-family: "Comfortaa", sans-serif;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  max-width: 80px;
+  position: fixed;
+  top: 0;
+  right: 25px;
+}
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dashed #fff;
+  color: #fff;
+  margin: 5px;
+}
+footer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer a .icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-content {
+  text-align: center;
+  text-transform: uppercase;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+h1 {
+  cursor: pointer;
+}
+
+h1 {
+  position: relative;
+  color: #fff;
+  font: 900 60px Montserrat;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+p{
+  position:sticky;
+  color: #fff;
+  font: 18 20px Montserrat;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: justify;
+}
+.hover,
+.word,
+.concept {
+  position: relative;
+  padding: 5em;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+.concept:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.concept:hover:before {
+  opacity: 0.5;
+}
+
+.concept-five {
+  background: url(https://www.upslp.edu.mx/upslp/english/wp-content/uploads/2023/10/DJI_0619.jpg) center center/cover;
+  display: flex;
+  align-items: center;
+}
+.concept-five .word {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.concept-five .word:hover .char:nth-child(even) {
+  top: 20px;
+}
+.concept-five .word:hover .char:nth-child(odd) {
+  top: -20px;
+}
+.concept-five .char {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+     
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        
+    <div class="concept concept-five">
+        <h1 class="word"><span class="char">H</span><span class="char">I</span><span class="char">S</span><span class="char">T</span><span class="char">O</span><span class="char">R</span><span class="char">I</span><span class="char">A</span>
+        </h1>
+        <p>La Universidad Politécnica de San Luis Potosí es una institución pública de nivel creada por decreto por el ejecutivo estatal el 27 de junio del año 2001 siendo la primera Universidad de su tipo en México, con un modelo académico orientado hacia la formación de competencias, en particular hacía las nuevas tecnologías de la información, telecomunicaciones, manufactura, así como a los enfoques innovadores de administración, gestión y mercadotecnia.
+        </p>
+      </div>
+      <br>
+      
+      <footer><a href="https://twitter.com/meowlivia_" target="_blank"><i class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank"><i class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank"><i class="icon-social-dribbble icons"></i></a>
+        <a href="index.html" role="button"><i class="icons-arrow"></i></a><!--icono de flecha-->
+
+    </footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
+
+
+
+    
+       
+    
+    

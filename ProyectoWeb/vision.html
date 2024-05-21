@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
+
+
+    <style>
+        body {
+            text-align: center;
+  background: #fff;
+  font-family: "Comfortaa", sans-serif;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  max-width: 80px;
+  position: fixed;
+  top: 0;
+  right: 25px;
+}
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dashed #fff;
+  color: #fff;
+  margin: 5px;
+}
+footer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer a .icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-content {
+  text-align: center;
+  text-transform: uppercase;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+h1 {
+  cursor: pointer;
+}
+
+h1 {
+    align-items: start;
+  position: relative;
+  color: #fff;
+  font: 900 60px Montserrat;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+p{
+  position:sticky;
+  color: #0c0c0c;
+  font: 16px Montserrat;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.hover,
+.word,
+.concept {
+  position: relative;
+  padding: 5em;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+.concept:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.concept:hover:before {
+  opacity: 0.5;
+}
+
+.concept-four {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2em;
+  background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/glacier.jpg) no-repeat center center/cover;
+}
+.concept-four h1 {
+  display: inline-block;
+}
+.concept-four:hover h1 {
+  letter-spacing: 25px;
+  transform: scale(1.3);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main-content">
+    <div class="concept concept-four">
+        <h1>VISIÓN</h1>
+    </div>
+      
+    <div class="contenido">
+        <h3>Objetivos Estratégicos</h3>
+        <ol>
+        <p> Aspiramos a ser una Universidad consolidada en su tarea de formar profesionales competentes, que se distinguen por su aportación al desarrollo de México y de San Luis Potosí y cuentan con reconocimiento en sus campos de actividad profesional y en su vida comunitaria.</p>
+        <p>La Universidad Politécnica de San Luis Potosí representa un espacio de desarrollo intelectual que atrae el mejor talento, tanto de estudiantes como profesores, que se sienten orgullosos de pertenecer a esta comunidad académica.</p>
+        <p>La Universidad aprovecha eficazmente la tecnología para el trabajo académico, manteniéndose a la vanguardia en la incorporación de nuevas tecnologías y utilizándolas en forma intensiva en sus procesos de formación, investigación y gestión.</p>
+        <p>La Universidad desarrolla actividades estratégicas en el campo de la innovación tecnológica en las áreas de conocimiento que cultiva, siendo un participante activo del sistema de innovación de la región, realizando proyectos conjuntos con empresas y gobiernos y ofreciendo servicios de capacitación, consultoría y desarrollo tecnológico de alto nivel al sector empresarial. Forma parte de redes de colaboración académica, nacionales e internacionales, en las cuales contribuye en temas de vanguardia tecnológica.</p>
+        <p>La Universidad se caracteriza por una intensa vida académica y cultural, que abre sus puertas cotidianamente a la sociedad para compartir y difundir con ella sus trabajos científicos, tecnológicos y culturales.</p>
+      </div>
+           <li>Mantener y fortalecer la pertinencia y calidad de los Programas Educativos.</li>
+           <li>Potenciar la innovación educativa.</li> 
+           <li>Fortalecer la capacidad y competitividad académicas.</li>
+           <li>Fortalecer la cooperación académica y la vinculación con el entorno.</li>
+           <li>Fortalecer la atención y formación integral del estudiante</li>
+           <li>Consolidar un sistema de gestión y evaluación institucional basado en el enfoque de calidad, orientado a la innovación permanente, promoción de la cultura de transparencia y rendición de cuentas.</li>
+        </ol>
+    </div>
+
+</body>
