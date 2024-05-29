@@ -3,150 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
-
-
-   
+    <title>UPSLP - Historia</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             text-align: center;
-  background: #fff;
-  font-family: "Comfortaa", sans-serif;
-  position: relative;
-}
-
-footer {
-  text-align: center;
-  padding: 1em;
-  max-width: 80px;
-  position: fixed;
-  top: 0;
-  right: 25px;
-}
-footer a {
-  text-decoration: none;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px dashed #fff;
-  color: #fff;
-  margin: 5px;
-}
-footer a:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-footer a .icons {
-  margin-top: 12px;
-  display: inline-block;
-  font-size: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.main-content {
-  text-align: center;
-  text-transform: uppercase;
-  scroll-snap-type: y mandatory;
-  position: relative;
-  height: 100%;
-  overflow-y: scroll;
-}
-h1 {
-  cursor: pointer;
-}
-
-h1 {
-  position: relative;
-  color: #fff;
-  font: 900 60px Montserrat;
-  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-
-p{
-  position:sticky;
-  color: #fff;
-  font: 18 20px Montserrat;
-  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  text-align: justify;
-}
-.hover,
-.word,
-.concept {
-  position: relative;
-  padding: 5em;
-  height: 100vh;
-  overflow: hidden;
-  scroll-snap-align: center;
-}
-.concept:before {
-  content: "";
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  top: 0;
-  left: 0;
-  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
-  opacity: 0;
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-}
-.concept:hover:before {
-  opacity: 0.5;
-}
-
-.concept-five {
-  background: url(https://www.upslp.edu.mx/upslp/english/wp-content/uploads/2023/10/DJI_0619.jpg) center center/cover;
-  display: flex;
-  align-items: center;
-}
-.concept-five .word {
-  width: 600px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.concept-five .word:hover .char:nth-child(even) {
-  top: 20px;
-}
-.concept-five .word:hover .char:nth-child(odd) {
-  top: -20px;
-}
-.concept-five .char {
-  flex: 1;
-  position: relative;
-  display: inline-block;
-  top: 0;
-  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-     
+            background: #fff;
+        }
+        .header {
+            background-color: #000080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav {
+            background-color: #3B3B98;
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            text-transform: uppercase;
+            scroll-snap-type: y mandatory;
+            position: relative;
+            height: 100%;
+            overflow-y: scroll;
+        }
+        .content h1 {
+            position: relative;
+            color: #000;
+            font: 900 60px Montserrat;
+            text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        .content p {
+            color: #000;
+            font: 18px Montserrat;
+            text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: justify;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .concept {
+            padding: 2em;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: center;
+        }
+        .footer {
+            background-color: #2E2E2E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .quick-navigation, .footer .stay-connected, .footer .get-in-touch {
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a {
+            text-decoration: none;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px dashed #fff;
+            color: #fff;
+            margin: 5px;
+        }
+        footer a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        footer a .icons {
+            margin-top: 12px;
+            display: inline-block;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="main-content">
-        
-    <div class="concept concept-five">
-        <h1 class="word"><span class="char">H</span><span class="char">I</span><span class="char">S</span><span class="char">T</span><span class="char">O</span><span class="char">R</span><span class="char">I</span><span class="char">A</span>
-        </h1>
-        <p>La Universidad Politécnica de San Luis Potosí es una institución pública de nivel creada por decreto por el ejecutivo estatal el 27 de junio del año 2001 siendo la primera Universidad de su tipo en México, con un modelo académico orientado hacia la formación de competencias, en particular hacía las nuevas tecnologías de la información, telecomunicaciones, manufactura, así como a los enfoques innovadores de administración, gestión y mercadotecnia.
-        </p>
-      </div>
-      <br>
-      
-      <footer><a href="https://twitter.com/meowlivia_" target="_blank"><i class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank"><i class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank"><i class="icon-social-dribbble icons"></i></a>
-        <a href="index.html" role="button"><i class="icons-arrow"></i></a><!--icono de flecha-->
-
-    </footer>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+    <div class="header">
+        <h1>UPSLP</h1>
+    </div>
+    <div class="nav">
+        <a href="#">INICIO</a>
+        <a href="#">Oferta Educativa</a>
+        <a href="#">Cultura y Deportes</a>
+        <a href="#">Vinculación</a>
+        <a href="#">Comunidad</a>
+        <a href="#">Interacción y Ayuda</a>
+    </div>
+    <div class="content">
+       
+            <h1 style="text-align: center;">HISTORIA</h1>
+            
+            <p>La UPSLP abrió sus puertas el 3 de septiembre de 2001,
+              en el ex Convento Carmelita. Fue un día inolvidable: 465
+              estudiantes inscritos en 4 carreras (ISTI, ITI, LAG y LMI),
+              los padres de familia, 27 profesores y un escaso número
+              de colaboradores administrativos daban vida a una
+              nueva comunidad educativa. Llenos de ilusiones, pero
+              también de incertidumbres, su propósito era hacer
+              realidad un sueño y responder cabalmente a las
+              expectativas que sobre la naciente Universidad tenía la
+              sociedad potosina.</p><br>
+              <p>Nació, así, la Universidad Politécnica, un proyecto para
+              el Estado de San Luis Potosí que atrajo la atención de
+              las autoridades educativas federales para reproducir en
+              otros estados el Modelo Académico innovador de la
+              UPSLP. Somos la primera de las 60 Universidades
+              Politécnicas que hoy se agrupan en la Coordinación
+              General de Universidades Tecnológicas y Politécnicas.</p><br>
+              <p>El proyecto se puso en marcha con grandes limitaciones y carencias. Sin embargo con mente abierta, metas
+              claras, visión de largo alcance, el propósito de siempre innovar, explorar caminos y de trabajar en colegiado se
+              ha propiciado uno de los resultados más sobresalientes de la UPSLP es la integración de la gran comunidad
+              educativa que ahora formamos.</p>
+    </div>
+    <div class="footer">
+        <div class="quick-navigation">
+            <h2>Navegación Rápida</h2>
+        </div>
+        <div class="stay-connected">
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">YouTube</a>
+        </div>
+        <div class="get-in-touch">
+            <h2>Contacto</h2>
+            <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363<br> 
+                Conmutador: (444) 870 - 21 - 00<br>
+                Atención Politécnica: politecnica@upslp.edu.mx</p>
+        </div>
+    </div>
 </body>
 </html>
 
